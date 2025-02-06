@@ -25,9 +25,16 @@
 					<div class="right-element">
 						<a href="#" class="user-account for-buy"><i
 								class="icon icon-user"></i><span>Account</span></a>
-						<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
-								$)</span></a>
-						<a href="register.php" class="cart for-buy"><i class="icon icon-user"></i><span>Register</span></a>		
+						<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0$)</span></a>
+
+						<?php 
+						if (isset ($_SESSION['auth']))
+						
+						?>
+
+						<a href="register.php" class="cart for-buy"><i class="icon icon-user"></i><span>Register</span></a>
+							
+						<a href="login.php" class="cart for-buy"><i class="bi bi-person"></i><span>Login</span></a>		
 
 						<div class="action-menu">
 
